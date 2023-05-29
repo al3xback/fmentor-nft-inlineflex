@@ -1,0 +1,12 @@
+@use '../abstracts/functions' as func;
+@use '../abstracts/mixins' as mix;
+
+main,
+main > .container {
+	@include mix.flexbox;
+	@include mix.flex-grow(1);
+}
+
+main > .container {
+	padding: func.em(40) 1.5em;
+}
