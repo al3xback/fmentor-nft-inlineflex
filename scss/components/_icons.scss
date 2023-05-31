@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as mix;
 
 [class^='icon-'] {
-	@include mix.inline-flexbox;
+	display: inline-block;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;

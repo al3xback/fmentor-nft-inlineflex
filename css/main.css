@@ -171,11 +171,7 @@ ol {
 }
 
 [class^=icon-] {
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
