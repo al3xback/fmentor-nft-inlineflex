@@ -5,6 +5,7 @@
 .card {
 	@include mix.inline-flexbox;
 	@include mix.flex-direction(column);
+	width: 100%;
 	max-width: func.em(350);
 	padding: func.em(24);
 	margin: auto;
