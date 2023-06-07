@@ -396,27 +396,27 @@ main > .container {
   padding: 2.5em 1.5em 3.75em;
 }
 
+footer,
+footer .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
 footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   width: 100%;
   padding: 1em 0;
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.8em;
 }
 
-footer > .container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+footer .container,
+footer p {
   -webkit-box-flex: auto;
   -moz-box-flex: auto;
   -ms-flex: auto;
@@ -425,11 +425,7 @@ footer > .container {
 }
 
 footer p {
-  -webkit-box-flex: auto;
-  -moz-box-flex: auto;
-  -ms-flex: auto;
-  -webkit-flex: auto;
-  flex: auto;
+  font-size: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */
