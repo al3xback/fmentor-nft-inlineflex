@@ -214,13 +214,24 @@ ol {
   box-shadow: 0 1.5625em 3.125em rgba(0, 0, 0, 0.1);
 }
 
-.card__image {
-  position: relative;
+.card__image,
+.card__content {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card__image {
+  position: relative;
   margin-bottom: 1.5em;
   background-color: hsl(215, 51%, 70%);
   -webkit-border-radius: 0.5em;
@@ -258,21 +269,6 @@ ol {
   -webkit-border-radius: inherit;
   -moz-border-radius: inherit;
   border-radius: inherit;
-}
-
-.card__content {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-direction: normal;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .card__title {
@@ -316,6 +312,10 @@ ol {
   color: hsl(178, 100%, 50%);
 }
 
+.card__stats-list-item:last-child {
+  margin-left: auto;
+}
+
 .card__stats-list-item i {
   -webkit-box-flex: none;
   -moz-box-flex: none;
@@ -326,17 +326,16 @@ ol {
 }
 
 .card__author {
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   -webkit-box-align: center;
   -moz-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  width: 100%;
   padding-top: 1em;
   margin-top: 1em;
   border-top: 1px solid hsl(215, 32%, 27%);

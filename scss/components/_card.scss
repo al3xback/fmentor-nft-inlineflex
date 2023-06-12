@@ -14,9 +14,14 @@
 	@include mix.box-shadow(0 func.em(25) func.em(50) rgba(0, 0, 0, 0.1));
 }
 
+.card__image,
+.card__content {
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
+}
+
 .card__image {
 	position: relative;
-	@include mix.flexbox;
 	margin-bottom: func.em(24);
 	background-color: var.$color-soft-blue;
 	@include mix.border-radius(0.5em);
@@ -47,11 +52,6 @@
 	@include mix.border-radius(inherit);
 }
 
-.card__content {
-	@include mix.flexbox;
-	@include mix.flex-direction(column);
-}
-
 .card__title {
 	margin-bottom: func.em(12, 22);
 }
@@ -77,15 +77,18 @@
 	color: var.$color-cyan;
 }
 
+.card__stats-list-item:last-child {
+	margin-left: auto;
+}
+
 .card__stats-list-item i {
 	@include mix.flex(none);
 	margin-right: func.em(7.7);
 }
 
 .card__author {
-	@include mix.inline-flexbox;
+	@include mix.flexbox;
 	@include mix.align-items(center);
-	width: 100%;
 	padding-top: func.em(16);
 	margin-top: func.em(16);
 	border-top: 1px solid var.$color-dark-blue-3;
