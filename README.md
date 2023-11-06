@@ -20,7 +20,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Modern inline-flex approach
+- Display inline-flex approach
 - Mobile-first workflow
 
 ## Author
