@@ -21,8 +21,8 @@
 
 .card__image {
 	position: relative;
-	margin-bottom: func.em(24);
 	background-color: var.$color-soft-blue;
+	margin-bottom: func.em(24);
 	border-radius: 8px;
 	cursor: pointer;
 }
@@ -31,14 +31,13 @@
 	content: '';
 	position: absolute;
 	inset: 0;
-	margin: auto;
 	background-color: var.$color-cyan-light;
 	background-image: url('../images/icons/view.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: inherit;
-	transition: opacity 0.3s;
 	opacity: 0;
+	transition: opacity 0.3s;
 }
 
 .card__image:hover::before {
